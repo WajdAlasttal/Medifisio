@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap");
+:root {
+  --primary: #339657;
+  --white: #fff;
+  --dimGray: #656565;
+  --nero: #262626;
+}
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s linear;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.top-nav {
+  background-color: #efefef;
+}
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dimGray);
+  font-size: 12px;
+  padding: 0.5rem 0;
+}
+.nav-link {
+  color: var(--dimGray);
+  text-decoration: none;
+}
+.primary-navbar {
+  background-color: var(--primary);
+  padding: 1rem 0;
+  color: var(--white);
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-content h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar ul li {
+  cursor: pointer;
+  margin: 0 1.5rem;
+}
+.navbar ul li a {
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+}
+.fa-bars {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+.search {
+  width: 15rem;
+  height: 2rem;
+  border: 2px solid #fff;
+  outline: none;
+  background: none;
+  border-radius: 5rem;
+  color: #fff;
+  padding: 0 0.5rem;
+}
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-weight: 600;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+.space1 {
+  width: 20%;
+}
+.home-content .home-info .award {
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+  background-color: #f1f1f1;
+  width: 20%;
+}
+.home-content .home-info .award p i {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 0.4rem;
+  margin-right: 0.3rem;
+}
+.home .home-info .award p {
+  font-size: 12px;
+}
+.home-images {
+  display: flex;
+  align-items: baseline;
+}
+.home-images .image1 {
+  width: 15vw;
+  height: 40vh;
+  background-color: var(--dimGray);
+  border-radius: 1rem;
+  margin-right: 15px;
+}
+.home-images .image2 {
+  width: 15vw;
+  height: 50vh;
+  background-color: var(--dimGray);
+  border-radius: 1rem;
+}
+.home-info {
+  width: 40vw;
+}
+.home-info h1 {
+  font-size: 56px;
+  margin-bottom: 1rem;
+}
+.home-info p {
+  font-size: 18px;
+  color: var(--dimGray);
+  line-height: 30px;
+  margin-bottom: 1rem;
+}
+.email {
+  padding: 1rem;
+  width: 50%;
+  border: 2px solid #fff;
+  outline: none;
+  background: #f1f1f1;
+  border-radius: 5rem;
+  color: #000;
+}
+.email::placeholder {
+  color: #a7a7a7;
+  opacity: 1;
+}
+.btn2 {
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #339657;
+}
+.about {
+  background-color: var(--nero);
+  color: var(--white);
+  padding: 4rem 0;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.space2 {
+  width: 50%;
+}
+.about-content .right-content {
+  font-size: 30px;
+  width: 100%;
+  margin-right: 2rem;
+}
+.about-content .left-content {
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 4rem;
+}
+.ranked {
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ranked .user p span i {
+  color: var(--primary);
+}
+.ranked .user .sm-p {
+  font-size: 14px;
+}
+.solution {
+  padding: 7rem 0 0 0;
+}
+.solution-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.solution-content .solution-image img {
+  width: 25vw;
+  background-color: #f4f4f4;
+  border-radius: 40px;
+}
+.solution-content .solution-info {
+  margin-left: 8rem;
+}
+.solution-content .solution-info h3 {
+  font-size: 44px;
+  font-weight: 600;
+  width: 79%;
+  margin-bottom: 1rem;
+}
+.solution-content .solution-info p {
+  color: var(--dimGray);
+  font-size: 18px;
+  line-height: 30px;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+/* media queries */
+@media (max-width: 1003px) {
+  .container {
+    width: 90%;
+  }
+  .space1,
+  .space2 {
+    width: 0%;
+  }
+  .header .fa-bars {
+    display: block;
+  }
+  .header .navbar {
+    flex-flow: column;
+    padding: 2rem 0;
+    position: fixed;
+    top: -135%;
+    left: 0%;
+    height: auto;
+    width: 100%;
+    background-color: var(--primary);
+    z-index: 1000;
+    border-top: 0.3rem solid rgba(0, 0, 0, 0.2);
+  }
+
+  .header .navbar ul {
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+  }
+  .header .navbar ul li {
+    margin: 1rem 0;
+  }
+  .header .fa-times {
+    transform: rotate(180deg);
+  }
+  .header .nav-toggle {
+    top: 5.8rem;
+  }
+  .home-content {
+    flex-flow: column;
+  }
+  .home-images {
+    width: 100%;
+  }
+  .home-images .image1 {
+    width: 40vw;
+  }
+  .home-images .image2 {
+    width: 50vw;
+    height: 60vh;
+  }
+  .home-info {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .email {
+    width: 65%;
+  }
+  .about-content {
+    flex-flow: column;
+  }
+  .about-content .right-content {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .about-content .left-content {
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 0rem;
+  }
+  .ranked {
+    width: 50vw;
+  }
+
+  .solution-content {
+    margin-bottom: 5rem;
+    flex-flow: column;
+  }
+  .solution-content:nth-child(even) {
+    flex-flow: column-reverse;
+  }
+  .solution-content .solution-image img {
+    width: 50vw;
+  }
+  .solution-content .solution-info {
+    margin-left: 0;
+  }
+  .solution-content .solution-info h3 {
+    font-size: 33px;
+    font-weight: 600;
+    width: 90%;
+    margin: 2rem 0;
+  }
+  .solution-content .solution-info p {
+    color: var(--dimGray);
+    font-size: 18px;
+    line-height: 30px;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+}
