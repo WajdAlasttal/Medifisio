@@ -406,16 +406,25 @@ body {
   border-color: var(--primary);
   color: var(--primary);
 }
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
 .information-cards{
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 30px 30px;
+  display: flex;
 }
 .information-cards .card {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 14px;
   padding: 20px;
+  flex: 1 0 30%;
 }
 .information-cards .card img{
   width: 100%;
@@ -431,6 +440,17 @@ body {
   color: var(--dimGray);
   line-height: 30px;
   font-size: 15px;
+}
+.swiper-navBtn{
+  color: #339657;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #339657;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
 }
 .footer{
   padding: 2rem 0rem;
@@ -541,6 +561,9 @@ body {
 .footer-info .navigate a{
   text-decoration: none;
   color: #656565;
+}
+.footer-info .navigate a:hover{
+  color: #339657;
 }
 .bottom-footer{
   display: flex;
@@ -660,6 +683,9 @@ body {
   .services {
     padding: 5rem 0;
   }
+  .services-header{
+    text-align: left;
+  }
   .services-header h2 {
     font-size: 50px;
   }
@@ -702,23 +728,17 @@ body {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .information-cards{
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 30px 30px;
-  }
   .information-cards .card {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 14px;
-    padding: 20px;
+    padding: 2rem 3rem;
   }
   .information-cards .card img{
-    width: 100%;
+    width: 60vw;
   }
   .information-cards .card h5{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     margin: 1rem 0;
     line-height: 36px;
     width: 95%;
@@ -764,6 +784,8 @@ body {
   .footer-info .navigate{
     margin-right: 2rem;
   }
-  
+  .slide-content{
+    margin: 0 10px;
+  }
   
 }
