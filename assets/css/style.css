@@ -259,7 +259,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
+  padding: 5rem;
   gap: 30px 30px;
 }
 .grid-item {
@@ -432,8 +432,126 @@ body {
   line-height: 30px;
   font-size: 15px;
 }
+.footer{
+  padding: 2rem 0rem;
+}
+.footer-content{
+  position: relative;
+  padding: 6rem 4rem;
+  background-color: #339657;
+  text-align: center;
+  color: var(--white);
+}
+.wave{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  background-repeat: repeat-x;
+  animation: waves 15s linear infinite;
+}
+.wave2{
+  animation-duration: 5s;
+  opacity: .5;
+}
+.wave3{
+  animation-direction: reverse;
+  opacity: .2;
+}
+.footer-content h3{
+  font-size: 44px;
+  margin-bottom: 2rem;
+}
+.footer-content p{
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
 
-
+.footer-content .email {
+  padding: 0.6rem;
+  width: 35%;
+  border: 2px solid #fff;
+  outline: none;
+  background: #f1f1f1;
+  border-radius: 5rem;
+  color: #000;
+}
+.footer-content .btn2 {
+  position: absolute;
+  top: 1%;
+  right: 32%;
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+}
+.email-subscribe{
+  position: relative;
+}
+@keyframes waves{
+  0%{
+      background-position-x: 0;
+  }
+  100%{
+      background-position-x: 100rem;
+  }
+}
+.footer-content2{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+.medifisio{
+  width: 25%;
+}
+.footer-content2 .medifisio h5{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.footer-content2 .medifisio p{
+  color: var(--dimGray);
+  margin-bottom: 1rem;
+}
+.footer-content2 .medifisio i{
+  padding: 0.5rem;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+.footer-info{
+  display: flex;
+}
+.footer-info .navigate{
+  margin-right: 3rem;
+}
+.footer-info .navigate h5{
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+.footer-info .navigate p{
+  margin-bottom: 1rem;
+}
+.footer-info .navigate a{
+  text-decoration: none;
+  color: #656565;
+}
+.bottom-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #A7A7A7;
+}
+.bottom-footer p{
+  margin-top: 1rem;
+  font-size: 14px;
+}
 /* media queries */
 @media (max-width: 1003px) {
   .container {
@@ -550,6 +668,7 @@ body {
   }
   .grid-container {
     grid-template-columns: auto;
+    padding: 0rem;
   }
   .reviews-content {
     display: flex;
@@ -609,5 +728,42 @@ body {
     line-height: 30px;
     font-size: 15px;
   }
+  .footer-content h3{
+    font-size: 35px;
+    margin-bottom: 2rem;
+  }
+  .footer-content p{
+    font-size: 16px;
+  }
+  .footer-content .email {
+    width: 85%;
+  }
+  .footer-content .btn2 {
+    top: 1.5%;
+    right: 5%;
+  }
+  .footer-content2{
+    flex-flow: column;
+  }
+  .medifisio{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .footer-content2 .medifisio h5{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .footer-content2 .medifisio p{
+    color: var(--dimGray);
+    margin-bottom: 1rem;
+  }
+  .footer-info{
+    flex-flow: wrap;
+  }
+  .footer-info .navigate{
+    margin-right: 2rem;
+  }
+  
   
 }
