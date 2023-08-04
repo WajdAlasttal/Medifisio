@@ -5,6 +5,7 @@ $(document).ready(function(){
 }
 );
 });
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -29,3 +30,13 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("rtl-ltr-toggle");
+
+    toggleButton.addEventListener("click", function() {
+        const currentDir = document.body.getAttribute("dir");
+        const newDir = currentDir === "rtl" ? "ltr" : "rtl";
+        document.body.setAttribute("dir", newDir);
+    });
+});
