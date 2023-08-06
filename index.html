@@ -40,10 +40,10 @@
       </div>
       <div class="primary-navbar">
         <div class="container">
-          <div class="navbar-content">
-            <h1>Medifisio</h1>
-            <div class="fas fa-bars"></div>
             <nav class="navbar">
+              <h1>Medifisio</h1>
+              <div class="fas fa-bars" onclick="openNavbar()"></div>
+             <div class="nav-links">
               <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -54,8 +54,20 @@
                 <input class="search" type="search" placeholder="Search" />
                 <button class="btn" type="submit">Register</button>
               </div>
+            </div>
             </nav>
-          </div>
+            <!-- aside navbar responsive -->
+              <div class="sidenav" id="sidenav">
+                <div class="fas fa-times" onclick="closeNavbar()"></div>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#solution">Solutions</a>
+                <a href="#services">Services</a>
+                <div class="search-content">
+                  <input class="search" type="search" placeholder="Search" />
+                  <button class="btn" type="submit">Register</button>
+                </div>
+              </div>
         </div>
       </div>
     </header>
@@ -363,6 +375,13 @@
                     Epsten-Bar virus (EBV),a highly contagious herpes virus.
                     This health problems is very common in teenegers and young adults. Another name or his diseases is infection monoucleosis which is also....</p>
                 </div>
+                <div class="card swiper-slide">
+                  <img src="./assets/images/image.png" alt="">
+                  <h5>The Impact of self-Diagnosis on
+                    mental Health</h5>
+                  <p>Self-dignosis is an assumption that states that a person has a disease based on his own knowledge Self-dignosis is a very dangrous to one`s health if one takes the wrong treatement methhod and takes the wrong drug.Apart from endangering health set......</p>
+                </div>
+                
               </div>
           </div>
         </div>
