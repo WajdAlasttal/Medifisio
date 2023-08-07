@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+body.rtl{
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+  .btnn{
+    margin-right: 1rem;
+  }
+  .nav-link {
+    margin-right: 1rem;
+  }
+  .sidenav{
+    right: 50%;
+  }
+  .sidenav .search-content{
+    padding: 3rem;
+  }
+  .home-content{
+    align-items: center;
+  }
+  .home-content .home-info .award p i {
+    margin-left: 0.3rem;
+  }
+  .home-images .image1 {
+    margin-left: 15px;
+  }
+  .home-info h1 {
+    font-size: 50px;
+    margin-bottom: .5rem;
+  }
+  .btn2 i{
+    transform: rotate(180deg);
+  }
+  .about-content .right-content {
+    margin-right: 0rem;
+  }
+  .ranked {
+    width: 30vw;
+  }
+  .solution-content .solution-info {
+    margin-right: 8rem;
+  }
+  .solution-content .solution-info h3 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .reviewer .info {
+    margin-right: 1rem;
+  }
+  .information-content .fa-arrow-left {
+    margin-right: 0.3rem;
+  }
+  .arrows{
+    flex-direction: row-reverse;
+  }
+  .information-cards{
+    flex-direction: row ;
+  }
+  .footer-content .btn2 {
+    right: 62%;
+    padding: 0.6rem 1rem;
+  }
+  .footer-info .navigate{
+    margin-right: 3rem;
+  }
+
+  /* media queries */
+  @media (max-width: 1003px) {
+    .sidenav .search-content .btn{
+      margin-right: 2.4rem;
+    }
+    .home-content .home-info .award {
+        width: 35%;
+    }
+    .home-images .image1 {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+    .home-images .image2 {
+      margin-right: 0;
+    }
+    .about-content .right-content {
+      margin-right: 0;
+    }
+    .about-content .left-content {
+      margin-right: 0rem;
+    }
+    .ranked {
+        display: none;
+    }
+    .solution-content .solution-info {
+      margin-right: 0;
+    }
+    .services-header{
+      text-align: right;
+    }
+    .reviewers-message {
+      width: 85%;
+    }
+    .reviews .arrows {
+        display: none;
+    }
+    .information .arrows{
+      margin-left: auto;
+    }
+    .information-cards .card img{
+      width: 45vw;
+    }
+    .footer-content .email {
+      width: 80%;
+    }
+    .footer-content .btn2 {
+      top: 1.5%;
+      right: 74%;
+      padding: .6rem 1rem;
+    }
+    .footer-info .navigate{
+        margin-right: 1rem;
+      }
+  }
+  @media (max-width: 376px) {
+    .sidenav .search-content{
+      padding: .1rem;
+    }
+    .btn{
+      margin-left: 2.3rem;
+    }
+    .about-content .right-content {
+      margin-right: 0;
+    }
+    .about-content .left-content {
+      margin-left: 0rem;
+    }
+    .solution-content .solution-info {
+      margin-left: 0;
+    }
+    .services-header{
+      text-align: right;
+    }
+
+    .information-cards .card img{
+      width: 50vw;
+    }
+
+    .footer-content .btn2 {
+      top: 1.5%;
+      right: 63%;
+    }
+    .footer-info .navigate{
+      margin-right: 1rem;
+    }
+  }
+  @media (min-width: 1010px)and (max-width: 1280px) {
+    .home-content .home-info .award p i {
+      margin-right: .1rem;
+    }
+    .home-images .image1 {
+      margin-right: 20px;
+    }
+  }  

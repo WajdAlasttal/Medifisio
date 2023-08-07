@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medifisio</title>
+    <!-- Fontawesome file link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS File-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/rtl.css" />
+  </head>
+  <body class="rtl">
+    <!-- header section -->
+    <header class="header">
+      <div class="top-nav">
+        <div class="container">
+          <div class="top-navbar">
+            <p>
+              <i class="fa-solid fa-computer-mouse"></i>
+              قم بتنزيل تطبيق ميديفيزيو هنا
+            </p>
+            <ul class="top-navbar">
+              <li class="nav-item">
+                <a class="nav-link" style="margin-right: 1rem" href="#location"
+                  >العنوان</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus">اتصل بنا</a>
+              </li>
+              <li>
+                 <button id="englishBtn" class="btnn">English</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="primary-navbar">
+        <div class="container">
+            <nav class="navbar">
+              <h1>ميديفيزيو</h1>
+              <div class="fas fa-bars" onclick="openNavbar()"></div>
+             <div class="nav-links">
+              <ul>
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#solution">الحلول</a></li>
+                <li><a href="#services">الخدمات</a></li>
+              </ul>
+              <div>
+                <input class="search" type="search" placeholder=" ابحث هنا" />
+                <button class="btn" type="submit">بحث</button>
+              </div>
+            </div>
+            </nav>
+            <!-- aside navbar responsive -->
+              <div class="sidenav" id="sidenav">
+                <div class="fas fa-times" onclick="closeNavbar()"></div>
+                <a href="#home">الصفحة الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#solution">الحلول</a>
+                <a href="#services">الخدمات</a>
+                <div class="search-content">
+                  <input class="search" type="search" placeholder="ابحث هنا" />
+                  <button class="btn" type="submit">بحث</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!--- Home Section --->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-info">
+            <div class="award">
+              <p>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>الحائز على جائزة
+              </p>
+            </div>
+            <h1>حلول الرعاية الصحية من أجل حياة أفضل</h1>
+            <p>
+              يوفر Medfysio حلولًا وموارد عملية لمساعدة الأفراد على تحسين صحتهم ورفاهيتهم ، كما يقدم Medfysio معلومات وإرشادات حول كيفية إجراء تغييرات إيجابية في مختلف جوانب الصحة.
+            </p>
+            <div>
+              <input
+                class="email"
+                type="email"
+                placeholder="ادخل الايميل الخاص بك"
+              />
+              <button class="btn2" type="submit">مشاركة</button>
+            </div>
+          </div>
+          <div class="space1"></div>
+          <div class="home-images">
+            <img class="image1" alt="" src="./assets/images/Rectangle 40.png" />
+            <img class="image2" alt="" src="./assets/images/Rectangle 39.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About us-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="right-content">
+            <p>
+              الرعاية الصحية بالطريقة التي تريدها بسيطة ومريحة ومعقولة.
+            </p>
+          </div>
+          <div class="space2"></div>
+          <div class="left-content">
+            <p>
+              يوفر Medfysio واضحًا وسهل الفهم فيما يتعلق بالصحة
+              المعلومات أو الموارد أو الخدمات: يمكن للمرضى الوصول إلى الرعاية الصحية
+              الخدمات ، مثل الاستشارات عبر الإنترنت أو العلاج عن بُعد
+              خدمات.
+            </p>
+            <div class="ranked">
+              <div class="user">
+                <p>
+                  16k <span><i class="fas fa-plus"></i></span>
+                </p>
+                <p class="sm-p">إجمالي المستخدمين</p>
+              </div>
+              <div class="user">
+                <p>
+                  25k <span><i class="fas fa-plus"></i></span>
+                </p>
+                <p class="sm-p">موظف</p>
+              </div>
+              <div class="user">
+                <p>
+                  20k <span><i class="fas fa-plus"></i></span>
+                </p>
+                <p class="sm-p">المستخدمين السعداء</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- solutions section -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <div class="solution-content">
+          <div class="solution-image">
+            <img src="./assets//images/mobile png 1.png" alt="mobile" />
+          </div>
+          <div class="solution-info">
+            <h3>
+              الخطوة رقم 1 تحقق من مستوى صحتك بانتظام بسهولة وفي الوقت الفعلي
+            </h3>
+            <p>
+              ابدأ بقياس مستوى صحتك بانتظام عبر هاتفك الخلوي
+              ببيانات يتم تحديثها في الوقت الفعلي. لذلك يمكنك توقع
+              أسوأ احتمالية لصحتك.
+            </p>
+            <button class="btn2">
+              اقرأ أكثر
+              <i
+                class="fa-solid fa-arrow-right"
+                style="color: #ffffff; margin-left: 0.2rem"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="solution-content">
+          <div class="solution-info" style="margin-left: 0">
+            <h3>الخطوة # 2 تتبع مستويات استهلاكك في الوقت الفعلي كل يوم</h3>
+            <p>
+              تتبع صحتك من خلال مراقبة مستويات الأطعمة التي تستهلكها
+              انظر كم منه يدخل جسمك كل يوم حتى تتمكن من ذلك
+              توقع عندما تستهلك الكثير من الطعام.
+            </p>
+            <button class="btn2">
+              اقرأ أكثر
+              <i
+                class="fa-solid fa-arrow-right"
+                style="color: #ffffff; margin-left: 0.2rem"
+              ></i>
+            </button>
+          </div>
+          <div class="solution-image">
+            <img src="./assets//images/mobile png 2.png" alt="mobile" />
+          </div>
+        </div>
+        <div class="solution-content">
+          <div class="solution-image">
+            <img src="./assets//images/mobile png 3.png" alt="mobile" />
+          </div>
+          <div class="solution-info">
+            <h3>
+              الخطوة # 3 قم بقياس نشاطك في الوقت الفعلي لمعرفة لياقتك
+              مستوى
+            </h3>
+            <p>
+              تحقق من صحتك بحلول الصباح من مستوى النشاط الذي تقوم به في أي وقت
+              الوقت عبر الهاتف الخاص بك في الوقت الحقيقي. حتى تتمكن من معرفة وقت الراحة
+              ومتى تفعل المزيد من الأنشطة.
+            </p>
+            <button class="btn2">
+              اقرأ أكثر
+              <i
+                class="fa-solid fa-arrow-right"
+                style="color: #ffffff; margin-left: 0.2rem"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="services-header">
+          <h2>أفضل خدمة جودة لعائلتك</h2>
+          <p>سيحتفظ أفضل طبيب فريق لدينا بمرافق كاملة وحديثة
+            أنت بصحة جيدة عودتنا لك إلى الصحة من المرض.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <i class="fa-solid fa-stethoscope" style="color: #000000;"></i>
+            <h5>الرعاية الصحية الأولية</h5>
+            <p>يقدم أطباؤنا المعتمدون الأفضل
+              الرعاية الطبية للمساعدة في الحفاظ عليك
+              صحيح</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-regular fa-heart" style="color: #000000;"></i>
+            <h5>العناية بالقلب</h5>
+            <p>الطبيب الأكثر تقدما و
+              مرفق رعاية القلب يحدث في المنطقة
+              في لايف كير</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-notes-medical" style="color: #000000;"></i>
+            <h5>الجراحة</h5>
+            <p>الجراحة في Lifeecore في الهاتف المحمول
+              خبرة في التحصيل والعامة
+              العمليات الجراحية</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-brain" style="color: #000000;"></i>
+            <h5>الصحة النفسية</h5>
+            <p>مساعدتك على الشعور بتحسن كما فعلت
+              أثناء الخضوع للعلاج من
+              الرعاية الصحية النفسية.</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-plant-wilt" style="color: #000000;"></i>
+            <h5>الخصوبة</h5>
+            <p>إرشادك خلال فترة الخصوبة
+              الهرمونات لديك اختيار الطقس
+              تريد الأطفال</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-weight-scale" style="color: #000000;"></i>
+            <h5>فقدان الوزن</h5>
+            <p>نحن نساعدك على إنقاص الوزن عن طريق التحضير
+              العقاقير الطبية وفقا لك
+              يحتاج.</p>
+          </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews-content">
+          <div class="reviews-header">
+            <span>مرضى سعداء</span>
+            <p>اراء من مرضانا</p>
+          </div>
+          <div class="arrows">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="reviewers">
+          <div class="reviewers-content">
+            <div class="reviewer">
+              <img src="./assets/images/Ellipse1.png" alt="profile picture">
+            <div class="info">
+                <h6>جاسيكا تايلور</h6>
+              <p>مريض سعيد</p>
+            </div>
+            </div>
+            <div class="reviewer">
+              <img src="./assets/images/Ellipse2.png" alt="profile picture">
+             <div class="info">
+              <h6>جاسيكا تايلور</h6>
+              <p>مريض سعيد</p>
+             </div>
+            </div>
+            <div class="reviewer">
+              <img src="./assets/images/Ellipse3.png" alt="profile picture">
+             <div class="info">
+              <h6>جاسيكا تايلور</h6>
+              <p>مريض سعيد</p>
+             </div>
+            </div>
+          </div>
+          <div class="reviewers-message">
+            <div class="title">
+             <div class="review-meassage-header">
+              <h6>كانت تجربة رائعة!</h6>
+              <img src="./assets//images/Starfull.png" alt="star 1">
+              <img src="./assets//images/Starfull.png" alt="star 2">
+              <img src="./assets//images/Starfull.png" alt="star 3">
+              <img src="./assets//images/Starfull.png" alt="star 4">
+              <img src="./assets//images/Starempty.png" alt="star 5">
+            </div>
+            <div class="commas">
+              <img src="./assets/images/inverted comma.png" alt=" " width=50>
+              <img src="./assets/images/inverted comma.png" alt="" width=50>
+            </div>
+             </div>
+             <p>سعيد للغاية للاستفادة من الخدمات الودية من Medfysio. واحدة من بلدي
+              استمتع المرضى بهذه الخدمات مؤخرًا وأعرب عن عميق
+              gartitude لي لإحالته إلى Medfysio.</p>
+              <p>كما ذكر أنه سيوصي بشدة Anavara إلى
+                طالبي العلاج في الخارج. السياحة العلاجية والاسعاف الجوي
+                الخدمة. الميسرين العالميين للصحة والعافية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information">
+      <div class="container">
+        <div class="information-content">
+          <div class="information-header">
+            <p class="header-info">كن أكثر أهمية
+              معلومات عن الصحة</p>
+          </div>
+          <div class="space1"></div>
+          <div class="header-info2">
+            <p>يوفر Medfysio محتوى مدونة حول الصحة بالنسبة لك ، مثل
+              أهمية الرياضة واللياقة والتغذية والصحة العقلية أو
+              رعاية طبية.</p>
+          </div>
+          <div class="space1"></div>
+          <div class="arrows">
+            <i class="fa-solid fa-arrow-left swiper-button-prev "></i>
+            <i class="fa-solid fa-arrow-right swiper-button-next "></i>
+          </div>
+        </div>
+          <div class="swiper">
+            <div class="slide-container slide-content">
+              <div class="information-cards swiper-wrapper">
+                <div class="card swiper-slide">
+                  <img src="./assets/images/image.png" alt="">
+                  <h5>أثر التشخيص الذاتي على
+                    الصحة النفسية</h5>
+                  <p>الكرامة الذاتية هي افتراض ينص على أن الشخص مصاب بمرض بناءً على معرفته الخاصة ، فإن الكرامة الذاتية تشكل خطورة كبيرة على صحة الفرد إذا أخذ المريض طريقة العلاج الخاطئة وأخذ الدواء الخطأ. .....</p>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="./assets//images/image (1).png" alt="">
+                  <h5>نظام تشخيص محتمل
+                    الذبحة الصدرية</h5>
+                  <p>الذبحة الصدرية هي عبارة عن مصطلح طبي يشير إلى ألم الصدر
+                    الانزعاج من أمراض القلب التاجية
+                    يلعن عندما لا تحصل عضلات القلب على كمية الدم التي تحتاجها عادة. يمكن أن تكون الأعراض التي تظهر إحساسًا بالضغط والألم في .... </p>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="./assets/images/image (2).png" alt="">
+                  <h5>أعراض الحمى الغدية يجب الانتباه لها</h5>
+                  <p>نظم الحمى الغدية عادة من تقاطع مع
+                    فيروس Epsten-Bar (EBV) ، وهو فيروس الهربس شديد العدوى.
+                    هذه المشاكل الصحية شائعة جدًا لدى المراهقين والشباب. اسم آخر أو أمراضه هو عدوى داء الوحيدات وهو أيضًا ....</p>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="./assets/images/image.png" alt="">
+                  <h5>أثر التشخيص الذاتي على
+                    الصحة النفسية</h5>
+                  <p>الكرامة الذاتية هي افتراض ينص على أن الشخص مصاب بمرض بناءً على معرفته الخاصة ، فإن الكرامة الذاتية تشكل خطورة كبيرة على صحة الفرد إذا أخذ المريض طريقة العلاج الخاطئة وأخذ الدواء الخطأ. .....</p>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="./assets//images/image (1).png" alt="">
+                  <h5>نظام تشخيص محتمل
+                    الذبحة الصدرية</h5>
+                  <p>الذبحة الصدرية هي عبارة عن مصطلح طبي يشير إلى ألم الصدر
+                    الانزعاج من أمراض القلب التاجية
+                    يلعن عندما لا تحصل عضلات القلب على كمية الدم التي تحتاجها عادة. يمكن أن تكون الأعراض التي تظهر إحساسًا بالضغط والألم في .... </p>
+                </div>
+                <div class="card swiper-slide">
+                  <img src="./assets/images/image (2).png" alt="">
+                  <h5>أعراض الحمى الغدية يجب الانتباه لها</h5>
+                  <p>نظم الحمى الغدية عادة من تقاطع مع
+                    فيروس Epsten-Bar (EBV) ، وهو فيروس الهربس شديد العدوى.
+                    هذه المشاكل الصحية شائعة جدًا لدى المراهقين والشباب. اسم آخر أو أمراضه هو عدوى داء الوحيدات وهو أيضًا ....</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
+          <h3>احصل على آخر الأخبار لدينا وتحديثها بانتظام</h3>
+          <p>نوصيك بالاشتراك في نشرتنا الإخبارية ، وإسقاط بريدك الإلكتروني أدناه <br> للحصول على تحديثات منتظمة.</p>
+          <div class="email-subscribe">
+            <input
+              class="email"
+              type="email"
+              placeholder="ادخل الايميل الخاص بك"
+            />
+            <button class="btn2" type="submit">مشاركة</button>
+          </div>
+        </div>
+        <div class="footer-content2">
+          <div class="medifisio">
+            <h5>ميديفيزيو</h5>
+            <p>يوفر Medfysio واضحًا وسهل الاستخدام
+              فهم المعلومات المتعلقة بالصحة
+              الموارد أو الخدمات.</p>
+            <div class="social-media">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="footer-info">
+            <div class="navigate">
+              <h5>التنقل</h5>
+              <p><a href="#home">الصفحة االرئيسية</a></p>
+              <p><a href="#about">من نحن</a></p>
+              <p><a href="#solution">الحلول</a></p>
+              <p><a href="#services">الخدمات</a></p>
+            </div>
+            <div class="navigate">
+              <h5>ادعمنا</h5>
+              <p><a href="#faq">أسئلة مكررة</a></p>
+              <p><a href="#contact">اتصل بنا</a></p>
+              <p><a href="#support">مركز الدعم</a></p>
+              <p><a href="#security">الامان</a></p>
+            </div>
+            <div class="navigate">
+              <h5>شريك</h5>
+              <p><a href="#partners">شركاؤنا</a></p>
+              <p><a href="#subscribe">اشترك</a></p>
+            </div>
+            <div class="navigate">
+              <h5>اتصل بنا</h5>
+              <p><a href="#email">Medfysio@business.com</a></p>
+              <p><a href="#phone">+61 7 7010 6803</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>© 2023 Medfysio ، نحن نحب مستخدمينا!</p>
+          <p>Devoloped By Wejdan Alasttal</p>
+          <p>الشروط والأحكام ، سياسة الخصوصية ، خريطة الموقع </p>
+        </div>
+      </div>
+    </footer>
+    <!-- JQuery file link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    <!-- JS File -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

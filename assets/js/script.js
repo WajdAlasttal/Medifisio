@@ -2,6 +2,7 @@ function openNavbar() {
   document.getElementById("sidenav").style.display = "block";
   document.getElementById("sidenav").style.width = "50%";
 }
+
 function closeNavbar() {
   document.getElementById("sidenav").style.width = "0%";
 }
@@ -30,12 +31,17 @@ var swiper = new Swiper(".slide-content", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("rtl-ltr-toggle");
-
-  toggleButton.addEventListener("click", function () {
-    const currentDir = document.body.getAttribute("dir");
-    const newDir = currentDir === "rtl" ? "ltr" : "rtl";
-    document.body.setAttribute("dir", newDir);
+document.addEventListener("DOMContentLoaded", function() {
+  var englishBtn = document.getElementById("englishBtn");
+  englishBtn.addEventListener("click", function() {
+    window.location.href = "english.html";
+    console.log("done")
+  });
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var arabicBtn = document.getElementById("arabicBtn");
+  arabicBtn.addEventListener("click", function() {
+    window.location.href = "arabic.html";
+    console.log("done")
   });
 });
