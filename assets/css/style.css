@@ -350,6 +350,7 @@ font-size: 20px;
   border: 1px solid #fff;
   border-radius: 50px;
   padding: 0.4rem;
+  margin-right: 0.5rem;
 }
 .reviews-content .fa-arrow-right {
   border: 1px solid #fff;
@@ -372,8 +373,10 @@ font-size: 20px;
 .reviewer {
   display: flex;
   align-items: center;
-  /* border-radius: 10px; */
   margin: 2rem 0;
+}
+.stars{
+  display: flex;
 }
 .reviewer .info {
   margin-left: 1rem;
@@ -383,16 +386,24 @@ font-size: 20px;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
+.reviews .owl-carousel{
+  width: 73%;
+}
 .reviewers-message {
-  width: 50%;
   background-color: #252525;
   padding: 2rem;
   border-radius: 20px;
+  margin-left: 1rem;
+}
+.commas{
+  display: flex;
+  width: 8%;
+  margin-right: 5rem;
 }
 .reviewers-message .title {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .reviewers-message .title .review-meassage-header h6 {
   font-weight: 400;
@@ -447,51 +458,27 @@ font-size: 20px;
   border-color: var(--primary);
   color: var(--primary);
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.slide-container{
-  width: 100%;
-}
-.slide-content{
-  overflow:hidden;
-}
-.information-cards{
-  margin-top: 3rem;
-  display: flex;
-}
-.information-cards .card {
+.card {
+  margin-top: 2rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 14px;
   padding: 20px;
   flex: 1 0 30%;
 }
-.information-cards .card img{
+.card img{
   width: 100%;
 }
-.information-cards .card h5{
+.card h5{
   font-weight: 600;
   font-size: 24px;
   margin: 1rem 0;
   line-height: 36px;
   width: 95%;
 }
-.information-cards .card p{
+.card p{
   color: var(--dimGray);
   line-height: 30px;
   font-size: 15px;
-}
-.swiper-navBtn{
-  color: #339657;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #339657;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 35px;
 }
 .footer{
   padding: 2rem 0rem;
@@ -635,15 +622,14 @@ font-size: 20px;
     display: none;
   }
   .sidenav .search-content{
-    flex-flow: column;
-    padding: .1rem;
+    padding: 3rem;
+    margin-top: 10%;
   }
   .sidenav .search-content .search{
     width: 100%;
   }
   .sidenav .search-content .btn{
     width: 55%;
-    margin-left: 2.4rem;
   }
   .header .navbar ul {
     height: 100%;
@@ -753,8 +739,8 @@ font-size: 20px;
   .reviewer .info h6 {
     font-size: 24px;
   }
-  .reviewers-message {
-    width: 85%;
+  .reviews .owl-carousel{
+    width: 93%;
   }
   .commas{
     display: flex;
@@ -970,6 +956,9 @@ font-size: 20px;
     justify-content: space-between;
     align-items: center;
   }
+  .reviews .owl-carousel{
+    width: 95%;
+  }
   .reviewers {
     flex-flow: column;
     align-items: flex-start;
@@ -978,7 +967,7 @@ font-size: 20px;
     font-size: 24px;
   }
   .reviewers-message {
-    width: 85%;
+    width: 75%;
   }
   .commas{
     display: flex;

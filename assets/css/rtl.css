@@ -10,12 +10,6 @@ body.rtl{
   .nav-link {
     margin-right: 1rem;
   }
-  .sidenav{
-    right: 50%;
-  }
-  .sidenav .search-content{
-    padding: 3rem;
-  }
   .home-content{
     align-items: center;
   }
@@ -67,8 +61,9 @@ body.rtl{
 
   /* media queries */
   @media (max-width: 1003px) {
-    .sidenav .search-content .btn{
-      margin-right: 2.4rem;
+    .sidenav .search-content{
+      padding: 3rem;
+      margin-top: 0;
     }
     .home-content .home-info .award {
         width: 35%;

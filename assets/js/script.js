@@ -1,6 +1,6 @@
 function openNavbar() {
   document.getElementById("sidenav").style.display = "block";
-  document.getElementById("sidenav").style.width = "50%";
+  document.getElementById("sidenav").style.width = "100%";
 }
 
 function closeNavbar() {
@@ -17,13 +17,12 @@ var swiper = new Swiper(".slide-content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
     520: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     950: {
       slidesPerView: 3,
@@ -45,3 +44,59 @@ document.addEventListener('DOMContentLoaded',function(){
     console.log("done")
   });
 });
+
+$('#carousel1').owlCarousel({
+  loop:true,
+  margin:20,
+  nav:false,
+  responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:1
+    },
+    1000:{
+        items:1
+    }
+}
+});
+$('#carousel2').owlCarousel({
+  loop:true,
+  nav:false,
+  margin:10,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+});
+  var owl = $("#carousel1");
+  owl.owlCarousel();
+  $(".fa-arrow-right").click(function(){
+    owl.trigger('next.owl.carousel');
+    console.log("yaleeeeeeel");
+  });
+
+  $(".fa-arrow-left").click(function(){
+    owl.trigger("prev.owl.carousel");
+    console.log("yaleeeeeeel");
+  });
+  var owl2 = $("#carousel2");
+  owl2.owlCarousel();
+  $(".fa-arrow-right").click(function(){
+    owl2.trigger('next.owl.carousel');
+    console.log("yaleeeeeeel");
+  });
+
+  $(".fa-arrow-left").click(function(){
+    owl2.trigger("prev.owl.carousel");
+    console.log("yaleeeeeeel");
+  });
+
