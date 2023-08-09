@@ -4,6 +4,12 @@ body.rtl{
     text-align: right;
     font-family: 'Cairo', sans-serif;
 }
+button{
+  font-family: 'Cairo', sans-serif;
+}
+input{
+  font-family: 'Cairo', sans-serif;
+}
   .btnn{
     margin-right: 1rem;
   }
@@ -41,6 +47,11 @@ body.rtl{
   }
   .reviewer .info {
     margin-right: 1rem;
+  }
+  .commas{
+    display: flex;
+    width: 8%;
+    margin-left: 5rem;
   }
   .information-content .fa-arrow-left {
     margin-right: 0.3rem;
@@ -91,13 +102,18 @@ body.rtl{
       text-align: right;
     }
     .reviewers-message {
-      width: 85%;
+      width: 80%;
     }
     .reviews .arrows {
         display: none;
     }
+    .commas{
+      display: flex;
+      width: 10%;
+      margin-left: 3rem;
+    }
     .information .arrows{
-      margin-left: auto;
+      display: none;
     }
     .information-cards .card img{
       width: 45vw;

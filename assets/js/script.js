@@ -7,40 +7,17 @@ function closeNavbar() {
   document.getElementById("sidenav").style.width = "0%";
 }
 
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 1,
-    },
-    950: {
-      slidesPerView: 3,
-    },
-  },
-});
-
 document.addEventListener("DOMContentLoaded", function() {
   var englishBtn = document.getElementById("englishBtn");
   englishBtn.addEventListener("click", function() {
-    window.location.href = "english.html";
+    window.location.href = "index.html";
     console.log("done")
   });
 });
 document.addEventListener('DOMContentLoaded',function(){
   var arabicBtn = document.getElementById("arabicBtn");
   arabicBtn.addEventListener("click", function() {
-    window.location.href = "arabic.html";
+    window.location.href = "index.ar.html";
     console.log("done")
   });
 });
@@ -81,22 +58,19 @@ $('#carousel2').owlCarousel({
   owl.owlCarousel();
   $(".fa-arrow-right").click(function(){
     owl.trigger('next.owl.carousel');
-    console.log("yaleeeeeeel");
   });
 
   $(".fa-arrow-left").click(function(){
     owl.trigger("prev.owl.carousel");
-    console.log("yaleeeeeeel");
+
   });
   var owl2 = $("#carousel2");
   owl2.owlCarousel();
-  $(".fa-arrow-right").click(function(){
+  $(".swiper-button-next").click(function(){
     owl2.trigger('next.owl.carousel');
-    console.log("yaleeeeeeel");
   });
 
-  $(".fa-arrow-left").click(function(){
+  $(".swiper-button-prev").click(function(){
     owl2.trigger("prev.owl.carousel");
-    console.log("yaleeeeeeel");
   });
 
