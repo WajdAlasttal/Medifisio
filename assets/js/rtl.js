@@ -34,11 +34,11 @@ $('#carousel1').owlCarousel({
   });
   var owl = $("#carousel1");
   owl.owlCarousel();
-  $(".fa-arrow-right").click(function(){
+  $(".next-button").click(function(){
     owl.trigger('next.owl.carousel');
   });
 
-  $(".fa-arrow-left").click(function(){
+  $(".prev-button").click(function(){
     owl.trigger("prev.owl.carousel");
   });
   var owl2 = $("#carousel2");

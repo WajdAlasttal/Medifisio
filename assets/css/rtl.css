@@ -119,15 +119,19 @@ input{
       width: 45vw;
     }
     .footer-content .email {
-      width: 80%;
+      width: 79%;
     }
     .footer-content .btn2 {
       top: 1.5%;
       right: 74%;
-      padding: .6rem 1rem;
+      padding: .6rem 1.2rem;
     }
     .footer-info .navigate{
         margin-right: 1rem;
+      }
+      .bottom-footer p{
+        margin-right: .5rem;
+        font-size: 6px;
       }
   }
   @media (max-width: 376px) {
@@ -153,13 +157,38 @@ input{
     .information-cards .card img{
       width: 50vw;
     }
-
+    .footer-content p{
+      text-align: right;
+    }
+    .footer-content .email {
+      width: 95%;
+    }
     .footer-content .btn2 {
       top: 1.5%;
-      right: 63%;
+      right: 68%;
     }
     .footer-info .navigate{
       margin-right: 1rem;
+    }
+    .footer-info .navigate{
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+    .footer-info .navigate h5{
+      font-size: 14px;
+    }
+    .footer-info .navigate p{
+      font-size: 14px;
+    }
+    .footer-info .navigate a{
+      font-size: 10px;
+    }
+    .footer-info .navigate a:hover{
+      color: #000;
+    }
+    .bottom-footer p{
+      margin-right: .5rem;
+      font-size: 6px;
     }
   }
   @media (min-width: 1010px)and (max-width: 1280px) {

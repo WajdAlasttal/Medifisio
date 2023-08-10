@@ -18,6 +18,12 @@ ul {
 body {
   font-family: "League Spartan", sans-serif;
 }
+button{
+  font-family: "League Spartan", sans-serif;
+}
+input{
+  font-family: "League Spartan", sans-serif;
+}
 .container {
   width: 80%;
   margin: auto;
@@ -815,15 +821,25 @@ font-size: 20px;
   .footer-info{
     flex-flow: wrap;
   }
-  .footer-info .navigate{
-    margin-right: 2rem;
-  }
   .slide-content{
     margin: 0 10px;
   }
+  .footer-info .navigate{
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .footer-info .navigate h5{
+    font-size: 14px;
+  }
+  .footer-info .navigate p{
+    font-size: 14px;
+  }
+  .footer-info .navigate a{
+    font-size: 10px;
+  }
   .bottom-footer p{
     margin-right: .5rem;
-    font-size: 10px;
+    font-size: 8px;
   }
   
 }
@@ -1042,15 +1058,26 @@ font-size: 20px;
   .footer-info{
     flex-flow: wrap;
   }
-  .footer-info .navigate{
-    margin-right: 2rem;
-  }
   .slide-content{
     margin: 0 10px;
+  }
+  .footer-info .navigate{
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .footer-info .navigate h5{
+    font-size: 15px;
+  }
+  .footer-info .navigate p{
+    font-size: 15px;
+  }
+  .footer-info .navigate a{
+    font-size: 13px;
   }
   .bottom-footer p{
     font-size: 10px;
   }
+ 
 
 }
 @media (min-width: 1010px)and (max-width: 1280px) {

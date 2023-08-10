@@ -54,13 +54,14 @@ $('#carousel2').owlCarousel({
       }
   }
 });
+$(document).ready(function(){
   var owl = $("#carousel1");
   owl.owlCarousel();
-  $(".fa-arrow-right").click(function(){
+  $(".next-button").click(function(){
     owl.trigger('next.owl.carousel');
   });
 
-  $(".fa-arrow-left").click(function(){
+  $(".prev-button").click(function(){
     owl.trigger("prev.owl.carousel");
 
   });
@@ -73,4 +74,4 @@ $('#carousel2').owlCarousel({
   $(".swiper-button-prev").click(function(){
     owl2.trigger("prev.owl.carousel");
   });
-
+});
